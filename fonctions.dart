@@ -10,3 +10,6 @@ multiplication(int p1, int p2){  //exercice 1.2
   return p1 * p2;
 }
 
+diviser(var p1, var p2){  //exercice 1.4
+  return (p1/p2);
+}
