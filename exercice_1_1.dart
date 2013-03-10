@@ -69,7 +69,10 @@ ex1_6(){
 }
 
 ex1_7(){
-  
+  print('Exercice 1.7');
+  var liste = new Set();
+  liste.addAll(['Jean', 'Maximilien', 'Brigitte', 'Sonia', 'Jean-Pierre', 'Sandra']);
+  exercice1_7(liste);
 }
 
 ex1_8(){
