@@ -1,6 +1,6 @@
 library exercise;
 import 'dart:math';
-
+import 'dart:core';
 part 'fonctions.dart';
 
 
@@ -27,12 +27,14 @@ ex1_2() {
      resultat = multiplication(multiplicateur, i);
      print(resultat);
   }
-  print(''); // sert d'espacement entre les 2 exercices
+  print(''); // sert d'espacement entre les exercices
 }
 
 ex1_3() {
   print ('Exercice 1.3');
- 
+  var list = ["*" , "**", "***", "****", "*****", "******", "*******", "********", "*********"];
+  exercice1_3(list);
+  print(''); // sert d'espacement entre les exercices
 }
 
 ex1_4(){
@@ -42,14 +44,63 @@ ex1_4(){
   var minutes = diviser(degres, 6).toInt(); // 360 degrés = 60 minutes donc 1 minute = 6 degrés
   var secondes = minutes*60;
   print('${radian} Radians équivaut à ${degres} Degrés, ${minutes} Minutes, ${secondes} Secondes');
+  print(''); // sert d'espacement entre les exercices
 }
-ex1_5(){
- print ('Exercice 1.5'); 
+
+ex1_5() {
+  print('Exercice 1.5');
+  print('');
+  var phrase = '''
+  Écrivez un script qui 
+  compte le nombre d'occurrences du
+  caractère «o» dans cette phrase. 
+  ''';
+  print(frequenceLettre(phrase));
+
+print(''); //sert d'espacement entre les exercices
 }
+
+ex1_6(){
+  print('Exercice 1.6');
+  var expression = "sasas";
+  print("L'expression est-elle un palindrome: ");
+  print (testPalindrome(expression));
+  print(''); // sert d'espacement
+}
+
+ex1_7(){
+  
+}
+
+ex1_8(){
+  print('Exercice 1.8');
+  var noteScolaire = 85;
+  print('La note standardisée est de : ');
+  exercice1_8(noteScolaire);
+  print('');
+}
+
+
+ex1_9(){
+  print('Exercice 1.9');
+  var prenom = ['Jean-Michel', 'Marc', 'Vanessa', 'Anne', 'Maximilien', 'Alexandre-Benoît', 'Louise'];
+  exercice1_9(prenom);
+}
+
+ex1_10(){
+  
+}
+
+
 main () {
   ex1_1();
   ex1_2();
   ex1_3();
   ex1_4();
   ex1_5();
+  ex1_6();
+  ex1_7();
+  ex1_8();
+  ex1_9();
+  ex1_10();
 }
