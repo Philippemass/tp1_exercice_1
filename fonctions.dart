@@ -41,6 +41,14 @@ bool testPalindrome(String expression) {                 //exercice 1.6
   return true;
 }
 
+exercice1_7(var liste){                                      //exercice 1.7
+    var enDessousDe6 = liste.where((m) => m.length < 6);
+    print (enDessousDe6.toSet());
+    var enHautDe6 = liste.where((m) => m.length >= 6) ;
+    print (enHautDe6.toSet());
+    print('');
+}
+
 exercice1_8(var noteScolaire){                              //exercice 1.8
   if (noteScolaire >= 90) {
     print('A');
