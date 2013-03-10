@@ -2,23 +2,23 @@ part of exercise;
 
 
 
-finance(var p1, var p2, var p3){                      //exercice 1.1
+finance(var p1, var p2, var p3){                        //exercice 1.1
   return p1 * (pow(1+ p2,p3));
 }
 
-multiplication(int p1, int p2){                       //exercice 1.2
+multiplication(int p1, int p2){                        //exercice 1.2
   return p1 * p2;
 }
 
 exercice1_3(var list){
-  for (var i in list){                                //exercice 1.3
+  for (var i in list){                                 //exercice 1.3
     if ((i.length).isEven) continue;
     print(i);
   }
 }
   
 
-diviser(var p1, var p2){                              //exercice 1.4
+diviser(var p1, var p2){                                //exercice 1.4
   return (p1/p2);
 }
 
@@ -67,7 +67,7 @@ exercice1_8(var noteScolaire){                              //exercice 1.8
   }
 }
 
-exercice1_9(var prenom){                              //exercice 1.9
+exercice1_9(var prenom){                                    //exercice 1.9
   print (prenom[0].length);
   print (prenom[1].length);
   print (prenom[2].length);
