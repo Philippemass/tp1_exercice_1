@@ -16,7 +16,14 @@ exercice1_3(var list){
     print(i);
   }
 }
-  
+
+exercice1_3_1(var sapin){
+  print(sapin[0]);
+  print(sapin[1]);
+  print(sapin[2]);
+  print(sapin[3]);
+  print(sapin[4]);
+}
 
 diviser(var p1, var p2){                                //exercice 1.4
   return (p1/p2);
@@ -50,29 +57,23 @@ exercice1_7(var liste){                                      //exercice 1.7
 }
 
 exercice1_8(var noteScolaire){                              //exercice 1.8
-  if (noteScolaire >= 90) {
+  if (noteScolaire >= 90){
     print('A');
-  }
-  else if (noteScolaire >= 80) {
+  }else if (noteScolaire >= 80){
     print('B');
-  }
-  else if (noteScolaire >= 70){
+  }else if (noteScolaire >= 70){
     print('C');
-  }
-  else if (noteScolaire >= 60){
+  }else if (noteScolaire >= 60){
     print('D');
-  }
-  else {
+  }else {
     print ('E');
   }
 }
 
 exercice1_9(var prenom){                                    //exercice 1.9
-  print (prenom[0].length);
-  print (prenom[1].length);
-  print (prenom[2].length);
-  print (prenom[3].length);
-  print (prenom[4].length);
-  print (prenom[5].length);
-  print (prenom[6].length);
+   prenom.forEach((p,q) => print('$p , $q'));
+}
+
+compteMot(var ph){                                          //exercice 1.10
+  
 }
