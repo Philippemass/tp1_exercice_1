@@ -37,6 +37,13 @@ ex1_3() {
   print(''); // sert d'espacement entre les exercices
 }
 
+ex1_3_1(){
+  print("Voici une autre façon d'imprimer la suite de symboles:");
+  var sapin = ['    *','   ***','  *****',' *******','*********'];
+  exercice1_3_1(sapin);
+  print("");
+}
+
 ex1_4(){
   print ('Exercice 1.4');
   var radian = 6.28318531; // représente 360 degrés
@@ -63,8 +70,11 @@ print(''); //sert d'espacement entre les exercices
 ex1_6(){
   print('Exercice 1.6');
   var expression = "sasas";
-  print("L'expression est-elle un palindrome: ");
-  print (testPalindrome(expression));
+   if (testPalindrome(expression) == true) {
+     print("L'expression: $expression, est un palindrome ");
+   }else {
+     print("L'expression: $expression, n'est pas un palindrome");
+   }
   print(''); // sert d'espacement
 }
 
@@ -86,12 +96,15 @@ ex1_8(){
 
 ex1_9(){
   print('Exercice 1.9');
-  var prenom = ['Jean-Michel', 'Marc', 'Vanessa', 'Anne', 'Maximilien', 'Alexandre-Benoît', 'Louise'];
+  var prenom = {'Jean-Michel': 11, 'Marc': 4, 'Vanessa': 7, 'Anne': 4,'Maximilien': 10, 'Alexandre-Benoît': 16, 'Louise': 6};
   exercice1_9(prenom);
 }
 
 ex1_10(){
-  
+  print('Exercice 1.10');
+  var ph = 'On considère comme mots les ensembles de caractères inclus entre des espaces.';
+  compteMot(ph);
+  print('');
 }
 
 
@@ -99,6 +112,7 @@ main () {
   ex1_1();
   ex1_2();
   ex1_3();
+  ex1_3_1();
   ex1_4();
   ex1_5();
   ex1_6();
