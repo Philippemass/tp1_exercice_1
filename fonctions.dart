@@ -74,6 +74,13 @@ exercice1_9(var prenom){                                    //exercice 1.9
    prenom.forEach((p,q) => print('$p , $q'));
 }
 
-compteMot(var ph){                                          //exercice 1.10
+List compteMot(String ph) {
   
+  var phWithout = ph.replaceAll(',', '').replaceAll(';', '').
+      replaceAll('.', '').replaceAll('\n', ' ');
+  
+  return (phWithout.split(' '));
 }
+
+
+
