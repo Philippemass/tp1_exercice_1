@@ -63,7 +63,6 @@ ex1_5() {
   caractère «o» dans cette phrase. 
   ''';
   print(frequenceLettre(phrase));
-
 print(''); //sert d'espacement entre les exercices
 }
 
@@ -98,12 +97,14 @@ ex1_9(){
   print('Exercice 1.9');
   var prenom = {'Jean-Michel': 11, 'Marc': 4, 'Vanessa': 7, 'Anne': 4,'Maximilien': 10, 'Alexandre-Benoît': 16, 'Louise': 6};
   exercice1_9(prenom);
+  print('');
 }
 
 ex1_10(){
   print('Exercice 1.10');
+  print("Voici le nombre de mots qu'il y a dans la phrase 'ph': ");
   var ph = 'On considère comme mots les ensembles de caractères inclus entre des espaces.';
-  compteMot(ph);
+  print(compteMot(ph).length) ;
   print('');
 }
 
